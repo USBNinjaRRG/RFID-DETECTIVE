@@ -1,46 +1,68 @@
-## 🚀 RFID-DETECTIVE Development Tasklist
+# 🛰️ RFID-DETECTIVE
 
-This repository contains the core development roadmap for the **RFID-DETECTIVE** project —  
-a **portable RFID reader and analyzer** built by **RRG (RFID Research Group)**.  
-The system supports both **HF (13.56 MHz)** and **LF (125 kHz)** card reading,  
-with on-board password handling for **MIFARE Classic 1K** cards and a minimal user interface.
-
-Developers and engineers can review and contribute to the four primary functions listed below.  
-*(All prices are indicative and open to discussion based on deliverables and expertise.)*
+**RFID-DETECTIVE** is a portable RFID reader and analyzer developed by **RRG (RFID Research Group)**.  
+It supports both **HF (13.56 MHz)** and **LF (125 kHz)** RFID cards, with on-board display, MIFARE Classic password handling,  
+and optional USB communication for PC integration.
 
 ---
 
-### 🧩 Core Functional Modules
+## 🧭 Project Overview
 
-| # | Function / Feature | Description | Est. Price (USD) |
-|:-:|--------------------|--------------|-----------------:|
-| 1 | 🔌 **HF Card Reading Support** | Implement reading of various high-frequency (13.56 MHz) cards — e.g., MIFARE Classic 1K/4K, NTAG, DESFire, ISO14443-A/B. | **$150** |
-| 2 | 📡 **LF Card Reading Support** | Add support for low-frequency (125 kHz) cards — e.g., EM4100, T5577, HID Prox. | **$130** |
-| 3 | 🔐 **MIFARE Classic 1K Password Handling** | Integrate Key A / Key B authentication for MIFARE Classic 1K cards and enable secure sector data access. | **$100** |
-| 4 | 🖥️ **MVP User Interface** | Develop a simple on-device interface (OLED/LCD) to display card UID, type, and status. | **$120** |
+The RFID-DETECTIVE device is designed to:
+- Read and identify **different kinds of HF cards** (MIFARE, NTAG, DESFire, ISO14443).  
+- Support **LF cards** (125 kHz EM4100 / T5577 / HID Prox).  
+- Handle **MIFARE Classic 1K key authentication** (Key A/B).  
+- Provide a **minimal user interface (MVP)** for on-device display of card UID and type.
 
-💰 **Total Estimated Budget:** ≈ **$500**
-
----
-
-### 🛠️ Contribution Workflow
-
-1. **Fork this repository** and create a branch for your chosen task.  
-2. Implement your feature and **submit a pull request (PR)**.  
-3. Include short notes or a video demo of functionality.  
-4. Upon successful review → merge → payment via milestone.
+This project aims to build a fully functional embedded firmware framework  
+with a modular design that allows easy testing, debugging, and future feature expansion.
 
 ---
 
-### 🧭 Future Enhancements
-- 🔋 Battery monitoring and power management  
-- 🔄 USB / Bluetooth connection to desktop software  
-- 🧱 Enclosure design and 3D model  
-- 💾 Optional data logging for UID history  
+## 🧩 Development Documents
+
+📘 **Main References**
+- [🧾 Task Notes & Development Bounties](TASK-NOTES.md)
+- [📄 Hardware Reference (coming soon)](docs/hardware.md)
+- [⚙️ Firmware Setup Guide (coming soon)](docs/firmware-setup.md)
 
 ---
 
-### 📇 Contact & Oversight
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| **Microcontroller (MCU)** | STM32 / ESP32 (depending on version) |
+| **RFID Modules** | PN532 (HF) and EM4100/T5577 (LF) |
+| **Display** | OLED (SSD1306 / ILI9341) |
+| **Language** | C / C++ |
+| **Development Environment** | STM32CubeIDE / Arduino IDE / PlatformIO |
+
+---
+
+## 🧰 Current Development Focus
+- [x] Hardware prototype assembled  
+- [ ] HF card reading logic  
+- [ ] LF card decoding  
+- [ ] MIFARE 1K password implementation  
+- [ ] UI display prototype  
+- [ ] USB/Serial data communication  
+
+Progress updates are tracked in the [Task Notes](TASK-NOTES.md).
+
+---
+
+## 🧑‍💻 Contributions
+
+Interested engineers can contribute to specific functions listed in the [TASK-NOTES.md](TASK-NOTES.md) file.  
+Please:
+1. **Fork** the repository.  
+2. Create a **feature branch** (e.g. `feature/hf-card-support`).  
+3. Submit a **pull request (PR)** with details and a short demo or explanation.  
+
+---
+
+## 📇 Contact & Oversight
 
 **Project Owner:** RFID Research Group (RRG)  
 **Product Engineer (Overseeing Development):** Ambrose John Gbormie  
