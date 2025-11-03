@@ -65,7 +65,7 @@ Please:
 ## 📇 Contact & Oversight
 
 **Project Owner:** RFID Research Group (RRG)  
-**Product Engineer (Overseeing Development):** Ambrose John Gbormie  
+**Product Engineer (Overseeing Development):** Ambrose
 📧 **Technical Contact:** ambrose@rfidresearchgroup.com  
 
 ---
